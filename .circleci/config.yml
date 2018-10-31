@@ -11,11 +11,7 @@ jobs:
           command: |
             curl -O https://admhelp.microfocus.com/srl/en/3.2/Content/Storm/t_JenkinsIntegration.htm#java_cli
       - run:    
-            command: |
+          command: |
             locate cli.jar
             
-      - run:
-          name: Start Load Test
-          command: |
-            java -jar cli.jar run testId= 922 connect=anushree.nagar@mheeducation.com:P@ssw0rd@Oct2018 tenant=949194025:109 sendEmail=True
       
