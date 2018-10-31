@@ -13,5 +13,6 @@ jobs:
            
       - run:    
           command: |
-            ls -l          
+            cd t_JenkinsIntegration.htm
+            ls -l
       
