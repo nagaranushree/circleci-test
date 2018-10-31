@@ -13,5 +13,5 @@ jobs:
            
       - run:    
           command: |
-            echo $JAVA_HOME          
+            ls -l          
       
