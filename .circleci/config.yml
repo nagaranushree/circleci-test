@@ -6,11 +6,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Start StormRunner
+          name: Download NodeJS CLI
           command: |
-            curl -O https://stormrunner-load.saas.hpe.com/v2/load-tests?TENANTID=949194025&projectId=109
+            curl -O https://admhelp.microfocus.com/srl/en/3.2/Content/Storm/t_JenkinsIntegration.htm#nodejs_cli
       - run:
-          name: Start Load Test
+          name: Install NodeJS CLI
           command: |
-            java -jar cli.jar run testId= 922 connect=anushree.nagar@mheeducation.com:P@ssw0rd@Oct2018 tenant=949194025:109 sendEmail=True
+            npm install storm_runner_cli.tgz
       
