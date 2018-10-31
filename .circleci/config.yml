@@ -2,13 +2,11 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: circleci/python:3.6.2-stretch-browsers
     steps:
       - checkout
-      - run: echo "A first hello"
       - run:
-      - run:
-          name: Start StormRunner
+          name: Download Selenium
           command: |
             curl -O https://stormrunner-load.saas.hpe.com/v2/load-tests?TENANTID=949194025&projectId=109
 
