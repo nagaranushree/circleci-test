@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Download Java CLIs
+          name: Download Java CLI
           command: |
             wget https://stormrunner-load.saas.hpe.com/external/storm-cli/storm_runner_java_cli.zip
            
