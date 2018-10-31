@@ -9,5 +9,6 @@ jobs:
       - run:
       - run:
           name: Start StormRunner
-          command: curl -O https://stormrunner-load.saas.hpe.com/v2/load-tests?TENANTID=949194025&projectId=109
+          command: |
+            curl -O https://stormrunner-load.saas.hpe.com/v2/load-tests?TENANTID=949194025&projectId=109
 
