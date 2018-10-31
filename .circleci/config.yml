@@ -10,9 +10,9 @@ jobs:
           name: Download Java CLI
           command: |
             curl -O https://admhelp.microfocus.com/srl/en/3.2/Content/Storm/t_JenkinsIntegration.htm#java_cli/storm_runner_java_cli
-            cd storm_runner_java_cli
+           
       - run:    
           command: |
-            ls -l
+            ls -h
             
       
