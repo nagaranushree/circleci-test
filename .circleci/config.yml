@@ -13,5 +13,6 @@ jobs:
            
       - run:    
           command: |
+            unzip storm_runner_java_cli.zip
             ls -l
       
