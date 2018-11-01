@@ -18,4 +18,4 @@ jobs:
             cd /tmp
             ls -l
             runId=$(ls -t1 *.csv | head -n 1 | cut -d '-' -f2 | cut -d. -f1)
-            echo runId
+            
