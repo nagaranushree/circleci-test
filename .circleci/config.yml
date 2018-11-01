@@ -15,7 +15,7 @@ jobs:
           command: |
             unzip storm_runner_java_cli.zip
             java -jar cli.jar runWithResult testId=922 connect=Anushree.Nagar@mheducation.com:P@ssw0rd@Oct2018@https://stormrunner-load.saas.hpe.com tenant=949194025:109 sendEmail=True
-            cd /tmp
+            ls -l
            
           
             
