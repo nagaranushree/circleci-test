@@ -22,5 +22,5 @@ jobs:
           name: Fetch Test Status from Performance Dashboard
           command: |   
             cd /tmp
-            wget http://awsci.mheducation.com/artifactory/webapp/#/artifacts/browse/tree/General/Build-Repo/com/mhe/Perf-Dashboard/Collectors/batch-job/target/	batch-job-0.0.8.jar
+            curl -u service_perf-dashboard:Welcome@1234 -X PUT http://awsci.mheducation.com/artifactory/webapp/#/artifacts/browse/tree/General/Build-Repo/com/mhe/Perf-Dashboard/Collectors/batch-job/target/batch-job-0.0.8.jar
             ls -l
