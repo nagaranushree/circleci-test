@@ -24,3 +24,4 @@ jobs:
             cd /tmp
             fileName=$(ls -t1 *.csv | head -n 1)
             echo "Filename: $fileName"
+            scp fileName Anushree.Nagar@mheducation.com@awsci3.mheducation.com:/local/apps/JENKINS_NODES/dockerized/qa1/jenkins-home/workspace/PQAJobs/StormrunnerTestJobs/CircleCIPOCTest
