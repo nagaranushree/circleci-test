@@ -22,4 +22,5 @@ jobs:
           name: Connect to ArtiFactorys
           command: |   
             curl -fL https://getcli.jfrog.io | sh
-            ls -l
+            fileName=$(ls -t1 *.csv | head -n 1)
+            echo "FileName: $fileName"
