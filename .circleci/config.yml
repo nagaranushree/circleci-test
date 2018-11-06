@@ -21,7 +21,7 @@ jobs:
             echo "Filename: $fileName"
             
       - run: 
-          name: Connect to ArtiFactory
+          name: Connect to ArtiFactorys
           command: |   
             curl -fL https://getcli.jfrog.io | sh
             ./jfrog rt config --url $ARTIFACTORY_URL --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_PASSWORD --interactive=false
