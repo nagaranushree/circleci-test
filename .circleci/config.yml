@@ -18,10 +18,11 @@ jobs:
             java -jar cli.jar runWithResult testId=922 connect=Anushree.Nagar@mheducation.com:P@ssw0rd@Oct2018@https://stormrunner-load.saas.hpe.com tenant=949194025:109 sendEmail=True
             cd /tmp
             fileName=$(ls -t1 *.csv | head -n 1)
-            echo "FileName: $fileName"
+            echo "Filename: $fileName"
             
       - run: 
           name: Connect to ArtiFactorys
           command: |   
             curl -fL https://getcli.jfrog.io | sh
+            ./jfrog rt u "filename" Perf-Dashboard/Collectors --build-name=CIRCLE_BUILD_URL --build-number=$CIRCLE_BUILD_NUM --flat=false
             
