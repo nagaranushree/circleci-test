@@ -24,5 +24,6 @@ jobs:
           name: Connect to ArtiFactory
           command: |   
             curl -fL https://getcli.jfrog.io | sh
+            ./jfrog rt config --url $ARTIFACTORY_URL --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_PASSWORD --interactive=false
             ./jfrog rt u "filename" Perf-Dashboard/Collectors --build-name=CIRCLE_BUILD_URL --build-number=$CIRCLE_BUILD_NUM --flat=false
             
