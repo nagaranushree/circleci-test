@@ -21,7 +21,7 @@ jobs:
             echo "Filename: $fileName"
             
       - run: 
-          name: Connect to ArtiFactorys
+          name: Connect to ArtiFactory
           command: |   
             curl -fL https://getcli.jfrog.io | sh
             ./jfrog rt u "filename" Perf-Dashboard/Collectors --build-name=CIRCLE_BUILD_URL --build-number=$CIRCLE_BUILD_NUM --flat=false
