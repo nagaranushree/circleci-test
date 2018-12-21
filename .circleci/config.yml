@@ -24,6 +24,6 @@ jobs:
           name: Connect to ArtiFactory
           command: |
             curl -fL https://getcli.jfrog.io | sh
-            ./jfrog rt config --url $ARTIFACTORY_URL --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_APIKEY --interactive=true
+            ./jfrog rt config --url $ARTIFACTORY_URL --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_PASSWORD --interactive=true
             ./jfrog rt u "filename" Perf-Dashboard/Collectors --build-name=CIRCLE_BUILD_URL --build-number=$CIRCLE_BUILD_NUM --flat=false
             curl -X POST https://jenkins-dev.legacy.nonprod.mheducation.com/performance/job/PQAJobs/job/CommonJobs/job/CircleCIIntegration/buildWithParameters?csvFileName=$fileNameparam --user anushree_nagar:P@ssw0rd@Oct2018
