@@ -24,5 +24,6 @@ jobs:
           name: Connect to ArtiFactory
           command: |
             curl -fL https://getcli.jfrog.io | sh
-            ls -l
+            ./jfrog rt config --url $ARTIFACTORY_URL --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_APIKEY --interactive=true
+             echo $ARTIFACTORY_URL
            
